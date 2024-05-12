@@ -143,23 +143,6 @@ body {
   color: #fff;
 }
 
-@media only screen and (max-device-width: 767px) {
-  html, body {
-    overflow-x: hidden;
-  }
-}
-
-  .mobile-top-fix {
-    margin-top: 30px;
-    margin-bottom: 0px;
-  }
-  .mobile-bottom-fix {
-    margin-bottom: 30px;
-  }
-  .mobile-bottom-fix-big {
-    margin-bottom: 60px;
-  }
-
 
 .main-button-red a {
   font-size: 13px;
@@ -531,120 +514,9 @@ header
   color: #f5a425;
 }
 
-@media (max-width: 1200px) {
-  .header-area .main-nav .nav li {
-    padding-left: 7px;
-    padding-right: 7px;
-  }
-  .header-area .main-nav:before {
-    display: none;
-  }
-}
 
-@media (max-width: 767px) {
-  .header-area .main-nav .logo {
-    color: #1e1e1e;
-  }
-  .header-area.header-sticky .nav li a:hover,
-  .header-area.header-sticky .nav li a.active {
-    color: #f5a425!important;
-    opacity: 1;
-  }
-  .header-area.header-sticky .nav li.search-icon a {
-    width: 100%;
-  }
-  .header-area {
-    background-color: #f7f7f7;
-    padding: 0px 15px;
-    height: 100px;
-    box-shadow: none;
-    text-align: center;
-  }
-  .header-area .container {
-    padding: 0px;
-  }
-  .header-area .logo {
-    margin-left: 30px;
-  }
-  .header-area .menu-trigger {
-    display: block !important;
-  }
-  .header-area .main-nav {
-    overflow: hidden;
-  }
-  .header-area .main-nav .nav {
-    float: none;
-    width: 100%;
-    display: none;
-    -webkit-transition: all 0s ease 0s;
-    -moz-transition: all 0s ease 0s;
-    -o-transition: all 0s ease 0s;
-    transition: all 0s ease 0s;
-    margin-left: 0px;
-  }
-  .header-area .main-nav .nav li:first-child {
-    border-top: 1px solid #eee;
-  }
-  .header-area.header-sticky .nav {
-    margin-top: 100px !important;
-  }
-  .header-area .main-nav .nav li {
-    width: 100%;
-    background: #fff;
-    border-bottom: 1px solid #eee;
-    padding-left: 0px !important;
-    padding-right: 0px !important;
-  }
-  .header-area .main-nav .nav li a {
-    height: 50px !important;
-    line-height: 50px !important;
-    padding: 0px !important;
-    border: none !important;
-    background: #f7f7f7 !important;
-    color: #191a20 !important;
-  }
-  .header-area .main-nav .nav li a:hover {
-    background: #bababa !important;
-    color: #f5a425!important;
-  }
-  .header-area .main-nav .nav li.has-sub ul.sub-menu {
-    position: relative;
-    visibility: inherit;
-    opacity: 1;
-    z-index: 1;
-    transform: translateY(0%);
-    top: 0px;
-    width: 100%;
-    box-shadow: none;
-    height: 0px;
-    transition: all 0s;
-  }
-  .header-area .main-nav .nav li.submenu ul li a {
-    font-size: 12px;
-    font-weight: 400;
-  }
-  .header-area .main-nav .nav li.submenu ul li a:hover:before {
-    width: 0px;
-  }
-  .header-area .main-nav .nav li.has-sub ul.sub-menu {
-    height: auto;
-  }
-  .header-area .main-nav .nav li.has-sub:after {
-    color: #3B566E;
-    right: 30px;
-    font-size: 14px;
-    top: 15px;
-  }
-  .header-area .main-nav .nav li.submenu:hover ul, .header-area .main-nav .nav li.submenu:focus ul {
-    height: 0px;
-  }
-}
 
-@media (min-width: 767px) {
-  .header-area .main-nav .nav {
-    display: flex !important;
-  }
-}
+
 
 
 /* 
@@ -724,17 +596,7 @@ banner
   margin-top: 30px;
 }
 
-@media screen and (max-width: 767px) {
 
-  .main-banner .caption h6 {
-    font-weight: 500;
-  }
-
-  .main-banner .caption h2 {
-    font-size: 36px;
-  }
-
-}
 
 
 /*
@@ -945,12 +807,7 @@ section.apply-now .item p {
   transition: color 200ms ease-in-out;
   border-bottom: 1px solid #fff;
 }
-@media screen and (min-width: 768px) {
-  .accordion-head {
-    padding: 1rem;
-    font-size: 1.2rem;
-  }
-}
+
 .accordion-head .icon {
   float: right;
   transition: transform 200ms ease-in-out;
@@ -1561,148 +1418,9 @@ section.meetings-page .pagination ul li a:hover {
 	width: 31%;
 }
 
-@media (max-width: 992px) {
-	.templatemo-item-col {
-		width: 45%;
-	}
-}
-
-@media (max-width: 767px) {
-	.templatemo-item-col {
-		width: 100%;
-	}
-}
 
 /* 
 ---------------------------------------------
 responsive
 --------------------------------------------- 
 */
-
-@media (max-width: 1300px) {
-  .services .owl-nav .owl-next{
-    right: -30px;
-  }
-  .services .owl-nav .owl-prev{
-    left: -25px;
-  }
-  .our-courses .owl-nav .owl-next{
-    right: -30px;
-  }
-  .our-courses .owl-nav .owl-prev{
-    left: -25px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .services .owl-nav .owl-next{
-    right: -70px;
-  }
-  .services .owl-nav .owl-prev{
-    left: -65px;
-  }
-  .our-courses .owl-nav .owl-next{
-    right: -70px;
-  }
-  .our-courses .owl-nav .owl-prev{
-    left: -65px;
-  }
-}
-
-@media (max-width: 1085px) {
-  .services .owl-nav .owl-next{
-    right: -30px;
-  }
-  .services .owl-nav .owl-prev{
-    left: -25px;
-  }
-  .our-courses .owl-nav .owl-next{
-    right: -30px;
-  }
-  .our-courses .owl-nav .owl-prev{
-    left: -25px;
-  }
-}
-
-@media (max-width: 1005px) {
-  .services .owl-nav .owl-next{
-    display: none;
-  }
-  .services .owl-nav .owl-prev{
-    display: none;
-  }
-  .our-courses .owl-nav .owl-next{
-    display: none;
-  }
-  .our-courses .owl-nav .owl-prev{
-    display: none;
-  }
-}
-
-@media (max-width: 992px) {
-
-  .main-banner .caption {
-    top: 60%;
-  }
-
-  .main-banner .caption h2 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 22px;
-  }
-
-  .main-banner .caption .main-button-red {
-    margin-top: 15px;
-  }
-
-  .services {
-    margin-top: 60px;
-  }
-
-  section.upcoming-meetings {
-    padding-top: 400px;
-  }
-
-  section.upcoming-meetings .categories {
-    margin-right: 0px;
-    margin-bottom: 30px;
-  }
-
-  .accordions {
-    margin-left: 0px;
-  }
-
-  .new-students {
-    margin-top: 15px;
-  }
-
-  section.our-facts .video {
-    margin-left: 0px;
-    margin-top: 15px;
-  }
-
-  section.contact-us #contact {
-    margin-bottom: 30px;
-  }
-
-}
-
-@media (max-width: 767px) {
-
-  .sub-header .left-content p {
-    display: none;
-  }
-
-  .sub-header .right-icons {
-    text-align: center;
-  }
-
-  .main-nav .nav .sub-menu {
-    display: none;
-  }
-
-  .header-area .main-nav .nav li ul.sub-menu li a {
-    color: #1f272b;
-  }
-
-}
