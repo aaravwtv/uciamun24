@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Aarav Mamtani">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>UCIA MUN '24</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+
+  </head>
+
+<body>
+
+  <!-- Sub Header -->
+ <!-- <div class="sub-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-sm-8">
+          <div class="left-content">
+            <p> Contact Us for any <em> Queries</em> at our instagram -></p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+          <div class="right-icons">
+            <ul>
+              <li><a href=""><i class="fa fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+  <header class="header-area header-sticky">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <nav class="main-nav">
+
+                      <a href="index.html" class="logo">
+                          UCIAMUN '24
+                          
+                      </a>
+                      <img src="assets/images/logo.jpg" alt="logo" class="ihateimage">
+                      <!-- ***** Logo End ***** -->
+                      
+                      <!-- ***** Menu Start ***** -->
+                      <ul class="nav">
+                          <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                          <li><a href="#about"> About</a></li>
+                          <li><a href="sign.html">Signup Now</a></li>
+                          <li class="has-sub">
+                              <a href="javascript:void(0)">Agendas</a>
+                              <ul class="sub-menu">
+                                  <li id="dropdown"><a href="#">Coming Soon...</a></li>
+                                  <li id="dropdown"><a href="#">Coming Soon...</a></li>
+                              </ul>
+                          </li>
+                          <li><a href="index.html#courses">Guides</a></li> 
+                          <li class="scroll-to-section"><a href="#contact">Contact Us</a></li> 
+                      </ul>        
+                      <a class='menu-trigger'>
+                          <span>Menu</span>
+                      </a>
+                      <!-- ***** Menu End ***** -->
+                  </nav>
+              </div>
+          </div>
+      </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <section class="section main-banner" id="top" data-section="section1">
+
+      <!-- Replace the video tag with an img tag -->
+      <img src="assets/images/meeting-United-Nations-Security-Council-2014.webp" alt="Main banner image" class="main-banner-img">
+
+      <div class="video-overlay header-text">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="caption">
+              <h6>Distinguished Delegates,</h6>
+              <h2>Welcome to UCIAMUN</h2>
+              <p>Welcome, to the Unity Conference on International Affairs, UCIAMUN'24! Lets embrace the chance to delve into issues, 
+                work together with a variety of viewpoints and promote harmony in diplomatic efforts. 
+                Lets work together to understand the intricacies of our world and aim for solutions, at UCIAMUN'24!  </p><Br>
+              <div id="countdown-container" class="text-center">
+                <h1 id="countdown-text"></h1>
+              </div>
+              <div class="main-button-red">
+                  <div><a href="sign.html">Sign Up Now!</a></div>
+              </div>
+          </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  </section>
+<!-- THis is the style for the countdown-->
+<style>
+  #countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+
+  #countdown-text {
+    font-size: 3rem;
+    margin: 0;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  </style>
+  <!-- THIS IS THE SCRIPT FOR THE COUNTDOWN-->
+  <script> 
+    const deadline = new Date("September 9, 2024 00:00:00").getTime();
+  const countdownContainer = document.getElementById("countdown-container");
+  const countdownText = document.getElementById("countdown-text");
+
+  const updateCountdown = () => {
+    const now = new Date().getTime();
+    const distanceToDeadline = deadline - now;
+
+    const days = Math.floor(distanceToDeadline / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distanceToDeadline % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distanceToDeadline % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distanceToDeadline % (1000 * 60)) / 1000);
+
+    countdownText.innerHTML = `${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`;
+  };
+
+  countdownContainer.style.display = "flex";
+  countdownContainer.style.justifyContent = "center";
+  countdownContainer.style.alignItems = "center";
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+
+  window.setTimeout(function(event){
+  document.querySelector("#clocklink").classList.add("hide");
+  document.querySelector("#message").classList.remove("hide");
+}, 2000 /* time to disable ms */)
+  </script>
+    <!-- ***** Main Banner Area End ***** -->
+
+ 
+
+  <section class="upcoming-meetings" id="meetings">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading" id="about">
+            <h2> Message from the Secretary-General</h2>
+
+          </div>
+        </div>
+
+
+            <div class="col-lg-6">
+              <div class="meeting-item">
+                <div class="thumb">
+                  <div class="price">
+                
+                  </div>
+                  <a href="https://www.instagram.com/uciamun24/"><img src="assets/images/black.jpg" alt="Picture"></a>
+                </div>
+                <div class="down-content">
+                  
+                  <a href="https://www.instagram.com/uciamun24/"><h4 class="ayshaleen">Aysha Leen</h4></a><br>
+                  <p>Dear Delegates,
+<br><br>
+                    Welcome to UCIAMUN’24! Just imagine being able to hear the latest developments, including exciting discussions 
+                    about topics that affect us all. As the Secretary-General for this exciting conference, I aim to facilitate an 
+                    atmosphere that stimulates intellectual exchange and action. Let's open our minds to the spirit of cooperation and 
+                    mutual respect, exploring partnerships which run on trust and good relationships. Engage on all levels with 
+                    enthusiasm that links different viewpoints, and realize that all the difficult matters are made doable by working 
+                    together. Most importantly, enjoy yourselves! MUN is not all about diplomacy; it's about the friends, the moments, 
+                    and the connections that stay with us a lifetime after the conference. With your help, we will surely ensure the 
+                    success of UCIA MAUN'24. Welcome aboard!
+                    <br><br>
+                    Best Regards,<br>
+                    Secretary General <br> 
+                    Aysha Leen</p>
+                </div>
+              </div>
+            </div>
+            
+
+            <!-- MANAS DXBBBB -->
+            <div class="col-lg-6">
+              <div class="meeting-item">
+                <div class="thumb">
+                  <div class="price">
+                   
+                  </div>
+                  <a href="https://www.instagram.com/manas.dxbb/"><img src="assets/images/manas.jpg" alt="Picture"></a>
+                </div>
+                <div class="down-content">
+                  
+                  <a href="https://www.instagram.com/manas.dxbb/"><h4 class="manask">Manas Kankarej</h4></a> <br>
+                  <p> Dear Delegates,
+                    <br><br>
+                    On behalf of the Secretariat, it is our pleasure to welcome you to the Unity Conference on International Affairs 
+                    International Model United Nations Conference. UCIAMUN stands as a hub of diplomacy, where tomorrow’s delegates 
+                    address the most pressing issues faced by the world in these harsh times. Throughout this conference, we aim to 
+                    bring out constructive debates and bring out innovative solutions. Your dedication to understanding these global 
+                    issues and advocating for meaningful change is commendable. As we embark on this journey, let us uphold the 
+                    principles of diplomacy, cooperation, and mutual respect. May UCIAMUN serve as a platform for understanding, and 
+                    action while leaving a lasting impact on all those delegates who participate at this conference. We are pleasured
+                    to have you amidst us in this exhilarating conference
+                    <br><br>
+                    Best Regards, <br>
+                    Secretary General<br>
+                    Manas Kankarej<br>
+                  
+                    
+                    </p>
+                </div>
+              </div>
+            </div>
+           
+
+            
+
+     
+
+  </section>
+
+  <section class="apply-now" id="apply">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="item">
+                <h3>Chair Applications</h3>
+                <p>Coming Soon...</p>
+                <div class="main-button-red">
+                  <div ><a href="https://linktr.ee/uciamun">Sign Up Now!</a></div>
+              </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="item">
+                <h3>Delegates Registration
+                <p>Coming Soon...</p>
+                <div class="main-button-yellow">
+                  <div><a href="https://linktr.ee/uciamun">Sign Up Now!</a></div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="accordions is-first-expanded">
+            <article class="accordion">
+                <div class="accordion-head">
+                    <span>Frequently Asked Questions</span>
+                    <span class="icon">
+                        <i class="icon fa fa-chevron-right"></i>
+                    </span>
+                </div>
+                <div class="accordion-body">
+                    <div class="content">
+                        <p>Below you can 
+                          find our frequently asked questions where we have meticulously identified major questions regarding our <em> 
+                            MUN</em> and how it works and various frequently asked questions, if you do have further questions please dont feel 
+                            afraid to <a href="https://linktr.ee/uciamun">Contact Us.</a> </p>
+                    </div>
+                </div>
+            </article>
+            <article class="accordion">
+                <div class="accordion-head">
+                    <span>What is MUN?</span>
+                    <span class="icon">
+                        <i class="icon fa fa-chevron-right"></i>
+                    </span>
+                </div>
+                <div class="accordion-body">
+                    <div class="content">
+                        <p> Model United Nations (MUN) is an educational activity that replicates the workings of the 
+                          United Nations. Participants, typically students, assume the roles of delegates representing different countries or 
+                          organizations. They engage in debates, negotiate, and draft resolutions on various global issues. 
+                          MUN conferences provide a platform for students to enhance skills like public speaking, research, diplomacy, and 
+                          problem-solving.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="accordion">
+                <div class="accordion-head">
+                    <span>Is this MUN paid?</span>
+                    <span class="icon">
+                        <i class="icon fa fa-chevron-right"></i>
+                    </span>
+                </div>
+                <div class="accordion-body">
+                    <div class="content">
+                        <p>Yes, UCIAMUN is a paid conference where each individual delegation or a school delegation or a chair will have to pay to be a 
+                          part of this MUN and gain the best experience.
+                        </p>
+                    </div>
+                </div>
+            </article>
+<!--            <article class="accordion last-accordion">
+                <div class="accordion-head">
+                    <span></span>
+                    <span class="icon">
+                        <i class="icon fa fa-chevron-right"></i>
+                    </span>
+                </div>
+                <div class="accordion-body">
+                    <div class="content">
+                        <p>Maecenas suscipit enim libero, vel lobortis justo condimentum id. Interdum et malesuada fames ac ante ipsum primis in faucibus.<br><br>
+                        Sed eleifend metus sit amet magna tristique, posuere laoreet arcu semper. Nulla pellentesque ut tortor sit amet maximus. In eu libero ullamcorper, semper nisi quis, convallis nisi.</p>
+                    </div>
+                </div>
+            </article> -->
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="our-courses" id="courses">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h2>Delegate Guides</h2>
+          </div>
+        </div>
+        <div class="col-lg-12">
+<h1 class="guidesh1"> Coming Soon...</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <section class="contact-us" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 align-self-center">
+          <div class="row">
+            <div class="col-lg-12">
+              <form id="contact" action="action.php" method="post">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h2>Let's get in touch</h2>
+                  </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                    <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Please Email us Or DM Us on Instagram..." required="" readonly>
+                  </fieldset>
+                  </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                      <input name="phone" type="number" id="subject" placeholder="Please Email us Or DM Us on Instagram...*" required="" readonly>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <textarea name="message" type="text" class="form-control" id="message" placeholder="Please Email us Or DM Us on Instagram..." required="" readonly></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="button">SEND MESSAGE NOW</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="right-info">
+            <ul>
+              <li>
+                <h6>Email Address</h6>
+                <span>uciamun24@gmail.com</span>
+              </li>
+              <li>
+                <h6>Location</h6>
+                <span>To Be Determined...</span>
+              </li>
+              <li>
+                <h6>Instagram</h6>
+                <span><a href="https://instagram.com/uciamun24">UCIAMUN'24</a></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Copyright © 2024 UCIAMUN, Ltd. All Rights Reserved. 
+          <br>Design: <a href="https://instagram.com/aaravmamtani" target="_parent"> Aarav Mamtani</a></p>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
+          e.preventDefault();
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
+</body>
+
+</body>
+</html>
