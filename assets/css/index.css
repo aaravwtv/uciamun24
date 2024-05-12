@@ -1424,3 +1424,69 @@ section.meetings-page .pagination ul li a:hover {
 responsive
 --------------------------------------------- 
 */
+
+
+/* Media queries for iPhone and iPad */
+@media only screen and (max-width: 767px) {
+  /* Adjustments for smaller screens */
+  .main-banner {
+    height: auto; /* Adjust banner height for smaller screens */
+  }
+
+  .header-area {
+    padding: 15px 0; /* Adjust header padding for smaller screens */
+  }
+
+  .header-area .main-nav .nav {
+    display: none; /* Hide navigation menu by default on smaller screens */
+  }
+
+  .header-area .main-nav .menu-trigger {
+    display: block; /* Show menu trigger on smaller screens */
+  }
+
+  .header-area .main-nav.active .nav {
+    display: block; /* Show navigation menu when menu trigger is clicked */
+  }
+
+  .header-area .main-nav.active .menu-trigger {
+    display: none; /* Hide menu trigger when navigation menu is active */
+  }
+
+  .main-button-red div a {
+    padding: 10px 20px; /* Adjust button padding for smaller screens */
+  }
+
+  .main-button-yellow div a {
+    padding: 10px 20px; /* Adjust button padding for smaller screens */
+  }
+
+  .meeting-item .down-content {
+    padding: 20px; /* Adjust content padding for smaller screens */
+  }
+
+  .apply-now .item {
+    margin-bottom: 20px; /* Adjust item margin for smaller screens */
+  }
+
+  .accordion .accordion-body {
+    max-height: 0; /* Collapse accordion content by default on smaller screens */
+  }
+
+  .accordion.is-open .accordion-body {
+    max-height: 500px; /* Expand accordion content when clicked on smaller screens */
+  }
+
+  .right-info {
+    margin-top: 20px; /* Adjust margin for contact info on smaller screens */
+  }
+
+  .footer {
+    padding: 20px 0; /* Adjust footer padding for smaller screens */
+  }
+}
+
+/* Landscape mode adjustments for iPhone */
+@media only screen and (max-device-width: 812px) and (orientation: landscape) {
+  
+}
